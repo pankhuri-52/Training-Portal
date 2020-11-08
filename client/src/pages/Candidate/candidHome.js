@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Button, Card, Grid } from 'antd';
+import { Layout, Row, Col, Card} from 'antd';
 import 'antd/dist/antd.css';
 import './candidHome.scss';
 import awsImage from '../../assets/images/aws.jpg';
