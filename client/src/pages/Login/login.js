@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Input, Button, Layout, notification } from 'antd';
+import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { useLocation } from 'react-router-dom';
 import useCandidateLogin from '../../hooks/useCandidateLogin';
 import useAdminLogin from '../../hooks/useAdminLogin';
@@ -91,7 +92,6 @@ const Login = () => {
                 className='form'
                 >
                     <Form.Item
-                        label="Email Id"
                         name="email"
                         rules={[
                         {
@@ -105,10 +105,10 @@ const Login = () => {
                         ]}
                         className='input-area'
                     >
-                        <Input className='input'/>
+                        <Input className='input' prefix={<UserOutlined />} 
+                                placeholder="Username or email" /> 
                     </Form.Item>
                     <Form.Item
-                        label="Password"
                         name="password"
                         rules={[
                         {
@@ -118,7 +118,8 @@ const Login = () => {
                         ]}
                         className='input-area'
                     >
-                        <Input.Password/>
+                        <Input.Password className='input' prefix={<LockOutlined />}
+                                        placeholder="Password"  />
                     </Form.Item>
                     <Form.Item className='register-btn'>
                         <Button type="primary" htmlType="submit" className='button' loading={loading}>
@@ -127,8 +128,6 @@ const Login = () => {
                     </Form.Item>
                 </Form>
             </Layout>
-
-            
     );
 };
 
