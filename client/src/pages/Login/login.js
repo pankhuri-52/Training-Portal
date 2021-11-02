@@ -76,6 +76,7 @@ const Login = () => {
 
     return (
         <Layout className='login'>
+            {/* <img src={require('../../images/main-wallpaper.jpg')} /> */}
             <Layout className="header-section">
                 <h3 className="header-text">
                     {location.pathname === '/admin_login' ? 'Admin Login' : 'Candidate Login'}

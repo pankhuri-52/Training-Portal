@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #80ced6;
 
     .logo {
         // background: yellow;
@@ -19,8 +20,10 @@
 
         .logo-text {
             font-weight: 700;
-            font-size: 22px;
+            font-size: 35px;
             color: $font-color-1;
+            font-family: Garamond, serif;
+            margin-top: 20px;
         }
     }
 
