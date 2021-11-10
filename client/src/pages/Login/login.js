@@ -75,6 +75,15 @@ const Login = () => {
     };
 
     return (
+       <div className="main">
+
+        {/* Division for image */}
+        <div className="picture-div">
+            <img src={require('../../assets/images/main-wallpaper.jpg')} />
+        </div>
+
+        {/* Division for Candidate Login */}
+        <div className="login-div">
         <Layout className='login'>
             {/* <img src={require('../../images/main-wallpaper.jpg')} /> */}
             <Layout className="header-section">
@@ -129,6 +138,9 @@ const Login = () => {
                     </Form.Item>
                 </Form>
             </Layout>
+        </div>
+
+     </div>
     );
 };
 

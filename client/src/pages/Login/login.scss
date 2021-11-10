@@ -2,10 +2,39 @@
 // @import "../../images/main-wallpaper.jpg";
 
 
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: calc(100vh - 60px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.picture-div {
+    height: 100% !important;
+    width: 69% !important;
+
+    img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}
+
+.login-div {
+    // margin-left: 70% !important; 
+    // height: 100px !important; 
+    // margin-top: 240px !important;
+    // justify-content: center;
+    // align-items: center;
+}
 
 .login {
     background: transparent;
-    background-image: mai;
+    // background-image: mai;
     height: 85%;
     display: flex;
     flex-direction: column;
@@ -26,6 +55,7 @@
             font-size: 50px;
             font-weight: 600;
             font-family: Garamond, serif;
+            margin-bottom: 5%;
         }
     }
 
