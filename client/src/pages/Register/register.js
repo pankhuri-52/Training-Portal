@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Form, Input, Button, Layout } from 'antd';
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import './register.scss';
+import { Divider } from 'rc-menu';
 const layout = {
     labelCol: {
         span: 5,
@@ -30,6 +32,16 @@ const Register = () => {
     };
 
     return (
+
+    <div className="main">
+        
+        {/* Division for image */}
+        <div className="picture-div">
+            <img src={require('../../assets/images/main-wallpaper.jpg')} />
+        </div>
+
+         {/* Division for Candidate Login */}
+        <div className="login-div">
         <Layout className='form-layout'>
              <Layout className="header-section">
                 <h3 className="header-text">Register</h3>
@@ -90,7 +102,8 @@ const Register = () => {
                     </Form.Item>
                 </Form>
             </Layout>
-
+        </div>
+    </div>
             
     );
 };
