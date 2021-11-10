@@ -79,7 +79,8 @@ const Login = () => {
 
         {/* Division for image */}
         <div className="picture-div">
-            <img src={require('../../assets/images/main-wallpaper.jpg')} />
+            <img src={require('../../assets/images/main-wallpaper.jpg')}
+                 alt = 'Main Background' />
         </div>
 
         {/* Division for Candidate Login */}

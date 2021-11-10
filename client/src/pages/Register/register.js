@@ -4,7 +4,7 @@ import { Form, Input, Button, Layout } from 'antd';
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import './register.scss';
-import { Divider } from 'rc-menu';
+
 const layout = {
     labelCol: {
         span: 5,
@@ -37,7 +37,8 @@ const Register = () => {
         
         {/* Division for image */}
         <div className="picture-div">
-            <img src={require('../../assets/images/main-wallpaper.jpg')} />
+            <img src={require('../../assets/images/main-wallpaper.jpg')} 
+                 alt = 'Main Background'/>
         </div>
 
          {/* Division for Candidate Login */}
